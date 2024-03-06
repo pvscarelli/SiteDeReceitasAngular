@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+$white-color: white;
+$background-color: #121212;
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $background-color;
+  color: $white-color;
+
+  & a {
+    text-decoration: none;
+    color: $white-color;
+  }
+}
+
+.logo {
+  width: 50px;
+}
+main {
+  flex: 1 0 auto;
+}
+
+.divFooter {
+  border-top: 1px solid #bbb;
+}
+.footerMainText {
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
+
+  @media (max-width: 380px) {
+    font-size: 16px;
+  }
+}
+.footerCopy {
+  font-size: 14px;
+  text-align: center;
+}

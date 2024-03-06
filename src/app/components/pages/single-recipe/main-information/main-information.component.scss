@@ -1,0 +1,43 @@
+$red-color: #ff0044;
+
+.foodTitle {
+  border-bottom: 1px solid #868686;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.textDiv {
+  width: 45%;
+}
+.imgDiv {
+  width: 50%;
+}
+a {
+  color: white;
+  transition: 0.4s;
+  &:hover {
+    color: $red-color;
+  }
+}
+.foodImg {
+  width: 100%;
+}
+.cardImage {
+  width: 350px;
+  cursor: pointer;
+  border: 1px solid white;
+  transition: 0.4s;
+  &:hover {
+    border-color: $red-color;
+  }
+}
+@media (max-width: 570px) {
+  .mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .textDiv,
+  .imgDiv {
+    width: 100%;
+  }
+}
